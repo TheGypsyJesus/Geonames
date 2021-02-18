@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>From Theory to Practice (PHP API's)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="application/javascript" src="js/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <table>
+        <tr>
+          <th>API Name</th>
+          <th>API Description</th>
+        </tr>
+        <!--No.1-->
+        <tr>
+          <td><h5>Recent Earthquakes</h5></td>
+          <td>
+            <h5>Select Co-ords</h5>
+            <br>
+            <input id="n-co-ord" type="number" name="N" value="44.1">
+            <br>
+            <input id="e-co-ord" type="number" name="E" value="-22.4">
+            <br>
+            <input id="s-co-ord" type="number" name="S" value="-9.9">
+            <br>
+            <input id="w-co-ord" type="number" name="W" value="55.2">
+          </td>
+          <td><button class="api-1">?</button></td>
+          <td>
+            <ul>
+              <li>Date/Time: <span id="e-dateTime"></span></li>
+              <li>Depth: <span id="e-depth"></span></li>
+              <li>Longitude: <span id="e-lng"></span></li>
+              <li>Latitude: <span id="e-lat"></span></li>
+              <li>Earthquake id: <span id="e-eqid"></span></li>
+              <li>Magnitude: <span id="e-magnitude"></span></li>
+              <li>Location: <span id="e-src"></span></li>
+            </ul>
+          </td>
+        </tr>
+        <!--No.2-->
+        <tr>
+          <td>2</td>
+          <td>[desc]</td>
+          <td><button class="api-2">?</button></td>
+        </tr>
+        <!--No.3-->
+        <tr>
+          <td>3</td>
+          <td>[desc]</td>
+          <td><button class="api-3">?</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+
+    </div>
+
+<!--Preloader-->
+    <div id=”preloader”></div>
+    <script type="application/javascript" src="js/script.js"></script>
+  </body>
+</html>
